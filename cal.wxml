@@ -1,0 +1,60 @@
+<view class="content">
+  <view class="screen">
+    {{screenData}}
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id36}}">MS</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id37}}">MR</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id38}}">MC</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id21}}">sin</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id22}}">cos</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id23}}">tan</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id24}}">√</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id35}}">π</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id32}}">asin</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id33}}">acos</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id34}}">atan</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id27}}">(</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id28}}">)</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id25}}">lg</view>
+
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id1}}">DEL</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id2}}">C</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id30}}">%</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id4}}">+</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id31}}">ln</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id7}}">7</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id6}}">8</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id5}}">9</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id8}}">-</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id29}}">1/x</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id11}}">4</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id10}}">5</view>
+    <view class='item white' hover-class='shadow'bindtap='clickButton' id="{{id9}}">6</view>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id12}}">x</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id26}}">^</view>
+    <view class='item white' hover-class='shadow' bindtap='clickButton' id="{{id15}}">1</view>
+    <view class='item white' hover-class='shadow' bindtap='clickButton' id="{{id14}}">2</view>
+    <view class='item white' hover-class='shadow' bindtap='clickButton' id="{{id13}}">3</view>
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id16}}">÷</view>
+  </view>
+  <view class='btn-group'>
+    <view class='item orange' hover-class='shadow'bindtap='clickButton' id="{{id3}}">±</view>
+    <view class='item white' hover-class='shadow' bindtap='clickButton' id="{{id17}}">0</view>
+    <view class='item white' hover-class='shadow' bindtap='clickButton' id="{{id18}}">.</view>
+    <view class='item blue' hover-class='shadow' bindtap='history' id="{{id19}}">ans</view> 
+    <view class='item orange' hover-class='shadow' bindtap='clickButton' id="{{id20}}">=</view>
+  </view>
+</view>
