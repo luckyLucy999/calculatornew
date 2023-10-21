@@ -1,0 +1,55 @@
+Partial code
+// Cloud function entry file
+const cloud = require('wx-server-sdk')
+
+cloud.init()
+// Cloud function entry function
+  exports.main = async (event, context) => {
+  const wxContext = cloud.getWXContext()
+
+  const db = cloud.database()
+  const result = await db.collection('calculation').get()
+
+  return result.data
+}
+
+
+wx.cloud.callFunction({
+  name: 'getCalculation',
+  success: res => {
+    console.log(res.result)
+    // This is where the obtained calculation log data is processed
+  },
+  fail: err => {
+    console.error(err)
+  }
+})
+exports.main = async (event, context) => { const { formula } = event const result = eval(formula) // 使用eval函数计算表达式结果
+try { const db = cloud.database() 
+const res = await db.collection(‘calculation’).add({ 
+   data: { 
+     formula: formula, 
+     result: result 
+   } 
+ }) 
+ return res  
+} 
+catch (err) {  
+    console.error(err) 
+    return err 
+  } 
+}
+
+  //     const db = wx.cloud.database();
+  //     db.collection('calculation').add({
+  //       data: {
+  //         formula: sd,
+  //         result: result
+  //       },
+  //       success: function (res) {
+  //         console.log(res);
+  //       },
+  //       fail: function (err) {
+  //         console.error(err);
+  //       }
+  //     });
