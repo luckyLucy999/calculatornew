@@ -1,0 +1,28 @@
+/* pages/list/list.wxss */
+/* pages/list/list.wxss */
+
+/* outer design */
+.content{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-repeat: repeat;
+  background-color: rgb(0, 0, 0);
+}
+
+/* each history formular */
+.item{
+  width: 90%;
+  line-height: 90rpx;
+  margin-top: 3rpx;
+  margin-bottom: 3rpx;
+  border-radius: 3px;
+  padding-left: 3rpx;
+  color: #000000;
+  font-weight: bold;
+  font-size: 25px;
+  border: 1px solid #e6a455;
+  background-color: #eca961;
+}
